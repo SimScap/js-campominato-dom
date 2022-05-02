@@ -1,0 +1,99 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  main {
+    flex-grow: 1;
+    background-color: #7fffd4;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right #level-select {
+    margin-left: 5px;
+    padding: 3px 5px;
+    width: 180px;
+  }
+  
+  .header-right .btn-play {
+    padding: 3px 5px;
+    margin-left: 5px;
+    width: 80px;
+  }
+  
+  /* Main */
+  
+  .wrap-grid h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 60px auto;
+  }
+  
+  .grid.end-game .square {
+    pointer-events: none;
+  }
+  
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  .square-number {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .square.safe,
+  .square.bomb {
+    color: #fff;
+    cursor: default;
+  }
+  
+  .square.safe {
+    background-color: #6495ed;
+  }
+  
+  .square.bomb {
+    background-color: #dc143c;
+  }
+  
+  .messagge {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  
